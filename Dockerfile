@@ -20,4 +20,4 @@ ENV COPY_REFERENCE_FILE_LOG $MAVEN_CONFIG/copy_reference_file.log
 
 USER seluser
 
-# VOLUME /home/seluser/.m2
+VOLUME /home/seluser/.m2
