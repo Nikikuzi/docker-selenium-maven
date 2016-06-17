@@ -64,8 +64,8 @@ ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG /home/seluser/.m2
 ENV COPY_REFERENCE_FILE_LOG $MAVEN_CONFIG/copy_reference_file.log
 
-# COPY mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh
-# COPY settings-docker.xml /usr/share/maven/ref/
+COPY mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh
+COPY settings-docker.xml /usr/share/maven/ref/
 
 USER seluser
 
