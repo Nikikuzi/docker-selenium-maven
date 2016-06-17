@@ -69,4 +69,5 @@ COPY settings-docker.xml /usr/share/maven/ref/
 
 USER seluser
 
+RUN mkdir /home/seluser/.m2
 VOLUME /home/seluser/.m2
