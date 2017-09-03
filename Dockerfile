@@ -36,7 +36,7 @@ ENV JAVA_DEBIAN_VERSION 8u91-b14-0ubuntu4~16.04.1
 RUN set -x \
   && apt-get update \
   && apt-get install -y \
-    openjdk-8-jdk="$JAVA_DEBIAN_VERSION" \
+    openjdk-8-jdk \
   && rm -rf /var/lib/apt/lists/* \
   && [ "$JAVA_HOME" = "$(docker-java-home)" ]
 
