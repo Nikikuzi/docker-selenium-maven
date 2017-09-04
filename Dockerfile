@@ -1,4 +1,4 @@
-FROM selenium/standalone-chrome-debug
+FROM selenium/standalone-chrome
 
 USER root
 
